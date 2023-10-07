@@ -1,4 +1,4 @@
-name:                lucid-hyperscript
+name:                lucid2-hyperscript
 version:             0.1.0.2
 github:              "MonadicSystems/lucid-hyperscript"
 license:             BSD3
@@ -21,7 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/Mona
 
 dependencies:
 - base >= 4.7 && < 5
-- lucid
+- lucid2
 - template-haskell
 - text
 
@@ -29,7 +29,7 @@ library:
   source-dirs: src
 
 executables:
-  lucid-hyperscript-exe:
+  lucid2-hyperscript-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -37,10 +37,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - lucid-hyperscript
+    - lucid2-hyperscript
 
 tests:
-  lucid-hyperscript-test:
+  lucid2-hyperscript-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -48,4 +48,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - lucid-hyperscript
+    - lucid2-hyperscript

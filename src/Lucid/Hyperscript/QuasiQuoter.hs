@@ -10,12 +10,12 @@ import GHC.Exts (IsString (..))
 import qualified Language.Haskell.TH as TH
 import Language.Haskell.TH.Quote ( QuasiQuoter(QuasiQuoter) )
 import Lucid (script_, toHtml, type_)
-import Lucid.Base (makeAttribute)
+import Lucid.Base (makeAttributes)
 
 __ :: QuasiQuoter
 __ =
   QuasiQuoter
-    ((\text -> [|makeAttribute "_" text|]) . processString)
+    ((\text -> [|makeAttributes "_" text|]) . processString)
     (error "Cannot use __ as a pattern")
     (error "Cannot use __ as a type")
     (error "Cannot use __ as a dec")

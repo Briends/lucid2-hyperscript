@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Lucid
-import Lucid.Base (Attribute)
+import Lucid.Base (Attributes)
 import Lucid.Hyperscript
 
 main :: IO ()

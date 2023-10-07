@@ -4,7 +4,7 @@ module Lucid.Hyperscript (useHyperscript, useHyperscriptVersion, _hs, __) where
 
 import Data.Text ( pack, Text )
 import Lucid (Html, HtmlT, script_, src_)
-import Lucid.Base (Attribute, makeAttribute)
+import Lucid.Base (Attributes, makeAttributes)
 import Lucid.Hyperscript.QuasiQuoter (__, _hs)
 
 useHyperscript :: Monad m => HtmlT m ()
